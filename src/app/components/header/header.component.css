@@ -1,0 +1,14 @@
+header{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: azure;
+}
