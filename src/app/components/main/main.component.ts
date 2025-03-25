@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './main.component.css',
 })
 export class MainComponent {
+  // Below are the array of data used to render in webpage by applying Data Binding Techniques
   avengers = [
     {
       title: 'SpiderMan',
@@ -44,11 +45,15 @@ export class MainComponent {
     },
   ];
 
-  updateAvengerStatus(avenger: any){
+  // updateAvengersStatus is an event binding, whenever user clicks button
+  // it will changes the status of the data can be represent or not
+  updateAvengerStatus(avenger: any) {
     avenger.isHeroActive = !avenger.isHeroActive;
   }
 
-  showInputBar(avenger: any){
+  //showInputBar is an event binding, Whenever user clicks button
+  //it will prompts the input bar to change the text presented on screen (Just like an edit)
+  showInputBar(avenger: any) {
     avenger.hideBar = !avenger.hideBar;
   }
 }
